@@ -18,6 +18,7 @@ fi
 
 #SELECT/CREATE USER {{{
 select_user(){
+##########################################################################################################################################
   #CREATE NEW USER {{{
   create_new_user(){
     printf "%s" "Username: "
@@ -33,6 +34,8 @@ select_user(){
     configure_user_account
   }
   #}}}
+##########################################################################################################################################
+### 				configuracion de bashrc con colores
   #CONFIGURE USER ACCOUNT {{{
   configure_user_account(){
     #BASHRC {{{
@@ -46,6 +49,9 @@ select_user(){
          
   
     #}}}
+	
+##########################################################################################################################################
+#			configuracion de vim con colores	
     #EDITOR {{{
     print_title "DEFAULT EDITOR"
             package_install "git"
