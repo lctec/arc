@@ -1,7 +1,25 @@
 #!/bin/bash
 #shellcheck disable=SC2034
 
+: 'ATTENTION!:
+--------------------------------------------------
+|  Created by helmuthdu <helmuthdu@gmail.com>    |
+|  Shellchecked by uniminin <uniminin@zoho.com>  |
+--------------------------------------------------
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-------------------------------------------------------------------------------
+'
 
 #MAINMENU {{{
   #  1) Basic Setup
@@ -23,7 +41,7 @@
   MAINMENU="1-13"
 #}}}
 #BASIC SETUP {{{
-  CUPS="n"
+  CUPS="y"
   CUSTOMREPO="n"         # Add custom repositories
   FIRMWARE="n"           # Install custom firmwares
   NFS="n"
@@ -70,7 +88,7 @@
   # 13) i3-Gaps
   # 14) OpenBox
   # 15) Xmonad
-  DESKTOPENV="8"
+  DESKTOPENV="4"
   #KDE {{{
     # 1) Choqok
     # 2) Digikam
@@ -143,7 +161,7 @@
   # 3) ConnMan
   # n) None
   NETWORKMANAGER="1"
-  USBMODEM="n" #USB 3G MODEM SUPPORT
+  USBMODEM="y" #USB 3G MODEM SUPPORT
   BLUETOOTH="y" #BLUETOOTH SUPPORT
 #}}}
 #ACCESSORIES {{{
@@ -158,7 +176,7 @@
   #  9) Synapse
   # 10) Terminator
   # 11) Tilix
-  ACCESSORIES_OPTIONS="7"
+  ACCESSORIES_OPTIONS="4 11"
 #}}}
 #DEVELOPEMENT {{{
   #  1) Atom
@@ -188,7 +206,7 @@
   # 25) Postman
   # 26) Gitkraken
   # 27) FreeCad
-  DEVELOPMENT_OPTIONS=""
+  DEVELOPMENT_OPTIONS="18"
 #}}}
 #OFFICE {{{
   #  1) Abiword+Gnumeric|Calligra
@@ -202,7 +220,7 @@
   #  9) Tellico
   # 10) Typora
   # 11) Xmind
-  OFFICE_OPTIONS=""
+  OFFICE_OPTIONS="6"
 #}}}
 #SYSTEM TOOLS {{{
   #  1) ClamAV
@@ -223,7 +241,7 @@
   # 16) netdata
   # 17) nload
   # 18) vmware-workstation 12
-  SYSTEMTOOLS_OPTIONS="6 9 11"
+  SYSTEMTOOLS_OPTIONS="12 14"
 #}}}
 #GRAPHICS {{{
   #  1) Blender
@@ -238,7 +256,7 @@
   # 10) Shotwell
   # 11) Simple Scan
   # 12) YACReader
-  GRAPHICS_OPTIONS=""
+  GRAPHICS_OPTIONS="2 3 4 6 10"
 #}}}
 #INTERNET {{{
   # 1) Browser
@@ -257,7 +275,7 @@
     # 6) Vivaldi
     # 7) Tor-browser
     # 8) Brave
-    BROWSERS_OPTIONS="1 2"
+    BROWSERS_OPTIONS="3"
   #}}}
   #DOWNLOAD|FILESHARE {{{
     #  1) Deluge
@@ -277,7 +295,7 @@
     # 15) Youtube-dl
     # 16) Megasync
     # 17) Extreme Download Manager
-    DOWNLOAD_OPTIONS="7 15"
+    DOWNLOAD_OPTIONS="13"
   #}}}
   #EMAIL|RSS {{{
     # 1) Liferea
@@ -299,7 +317,7 @@
     # 12) Slack
     # 13) VK Messanger
     # 14) Zoom.us
-    IM_OPTIONS=""
+    IM_OPTIONS="5"
   #}}}
   #MAPPING {{{
     # 1) Anydesk
@@ -331,14 +349,14 @@
     # 10) Spotify
     # 11) Timidity++
     # 12) quodlibet
-    AUDIO_PLAYER_OPTIONS=""
+    AUDIO_PLAYER_OPTIONS="9"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Audacity
     # 2) Easytag
     # 3) OcenAudio
     # 4) Soundconverter|Soundkonverter
-    AUDIO_EDITOR_OPTIONS=""
+    AUDIO_EDITOR_OPTIONS="2"
   #}}}
 #}}}
 #VIDEO {{{
@@ -357,7 +375,7 @@
     #  8) Popcorn Time
     #  9) VLC
     # 10) Kodi
-    VIDEO_PLAYER_OPTIONS="5"
+    VIDEO_PLAYER_OPTIONS="8"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
@@ -369,7 +387,7 @@
     # 7) Openshot
     # 8) Pitivi
     # 9) Transmageddon
-    VIDEO_EDITOR_OPTIONS=""
+    VIDEO_EDITOR_OPTIONS="8"
   #}}}
 #}}}
 #GAMES {{{
@@ -385,7 +403,7 @@
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
-  WEBSERVER=""
+  WEBSERVER="4"
   POSTGIS="n"
 #}}}
 #FONTS {{{
@@ -405,7 +423,7 @@
 #}}}
 #IME INPUT TOOLS  {{{
   # 1) fcitx
-  # 2) ibusvim 
+  # 2) ibus
   IME_OPTIONS=""
 #}}}
 #EXTRA {{{
