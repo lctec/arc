@@ -36,39 +36,15 @@ select_user(){
   #CONFIGURE USER ACCOUNT {{{
   configure_user_account(){
     #BASHRC {{{
-    print_title "BASHRC - https://wiki.archlinux.org/index.php/Bashrc"
-    bashrc_list=("Get helmuthdu .bashrc from github" "Vanilla .bashrc" "Get personal .bashrc from github");
-    PS3="$prompt1"
-    echo -e "Choose your .bashrc\n"
-    select OPT in "${bashrc_list[@]}"; do
-      case "$REPLY" in
-        1)
+   
           package_install "git"
           package_install "colordiff"
           git clone https://github.com/helmuthdu/dotfiles
           cp dotfiles/.bashrc dotfiles/.dircolors dotfiles/.dircolors_256 dotfiles/.nanorc dotfiles/.yaourtrc ~/
           cp dotfiles/.bashrc dotfiles/.dircolors dotfiles/.dircolors_256 dotfiles/.nanorc dotfiles/.yaourtrc /home/"${username}"/
           rm -fr dotfiles
-          ;;
-        2)
-          cp /etc/skel/.bashrc /home/"${username}"
-          ;;
-        3)
-          package_install "git"
-          printf "%s" "Enter your github username [ex: helmuthdu]: " 
-          read -r GITHUB_USER
-          printf "%s" "Enter your github repository [ex: aui]: "
-          read -r GITHUB_REPO
-          git clone https://github.com/"$GITHUB_USER"/"$GITHUB_REPO"
-          cp -R "$GITHUB_REPO"/.* /home/"${username}"/
-          rm -fr "$GITHUB_REPO"
-          ;;
-        *)
-          invalid_option
-          ;;
-      esac
-      [[ -n $OPT ]] && break
-    done
+         
+  
     #}}}
     #EDITOR {{{
     print_title "DEFAULT EDITOR"
