@@ -126,7 +126,7 @@ configure_sudo(){
           pacman -D --asdeps go
           aui_download_packages "yay"
   
-}
+
 #}}}
 #AUTOMODE {{{
 automatic_mode(){
